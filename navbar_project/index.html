@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4518a9ec8f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar Project hw-4</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Project</div>
+        <!-- Toggle menu button  -->
+        <span class="menubtn" onclick="openNav()"><i class="fa-solid fa-align-justify"></i></span>
+        <div class="navlinks">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contack</a></li>
+                <button type="button">Login</button>
+            </ul>
+        </div>
+    </nav>
+    <!-- Responsive side navbar  -->
+    <div class="sideNav" id="sidenav">
+        <span class="closeBtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></span>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#"><button type="button">Login</button></a>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

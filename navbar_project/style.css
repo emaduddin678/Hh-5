@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(to right, rgb(62, 182, 182), rgb(228, 131, 131));
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Slab', serif;
+} 
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 5%;
+}
+nav .logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+     list-style: none;
+}
+nav ul li {
+    line-height: 30px;
+    padding: 0px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+nav ul li:hover {
+    background-color: rgb(0, 60, 139);
+}
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+nav .navlinks button {
+    padding: 2px 25px;
+    border-radius: 10px;
+    color:  rgb(0, 66, 151);
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    border-style: none;
+    margin-left: 15px;
+}
+
+nav i{
+    font-size: 30px;
+    cursor: pointer;
+}
+.menubtn {
+    display: none;
+}
+
+/* Responsive navbar in css */
+
+@media screen and (max-width: 600px){
+    .menubtn {
+        display: flex;
+    }
+    nav .navlinks{
+        display: none;
+    }
+    .sideNav {
+        display: block !important;
+    }
+}
+
+
+.sideNav {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    background-color: royalblue;
+    overflow-x: hidden;
+    transition: 0.3s ease-in;
+    /* display: block; */
+    padding-top: 25px;
+    display: none;
+}
+
+.sideNav a {
+    padding: 8px 8px 8px 40px;
+    display: block;
+    font-size: 25px;
+    color: white;
+    transition: 0.3s;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    /* margin: 20px; */
+    border-radius: 10px;
+}
+
+.sideNav a button {
+    padding: 5px 25px;
+    border-radius: 5px;
+    color:  rgb(0, 66, 151);
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    border-style: none;
+}
+.sideNav a:hover {
+    background-color: white;    
+    color: rgb(0, 60, 139);
+
+}
+.sideNav .closeBtn {
+    position: relative;
+    top: 10px;
+    /* right: 25px; */
+    font-size: 20px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
