@@ -1,0 +1,37 @@
+.sidemenu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 200px;
+    background-color: darkblue;
+    z-index: 1;
+    padding-top: 60px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* padding: 10px 0px; */
+}
+.sidemenu a {
+    color: rgb(116, 159, 223);
+    text-decoration: none;
+    display: block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin: 5px 0px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+.sidemenu a:hover {
+    color: rgb(255, 255, 255);
+    
+
+}
+.sidemenu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    font-size: 22px;
+}

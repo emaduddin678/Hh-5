@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background-color: rgb(68, 109, 233);
+    width: 100%;
+    box-sizing: border-box;
+
+}
+header .logo {
+    color: white;
+    line-height: 80px;
+    font-size: 26px;
+    float: left;
+    font-weight: bold;
+}
+
+header nav {
+    float: right;
+}
+header nav ul{
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    list-style: none;
+}
+header nav ul li a {
+    line-height: 80px;
+    text-decoration: none;
+    padding: 5px 20px;
+    color:  white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    /* display: block; */
+} 
+header nav ul li a:hover, .active {
+    color: rgb(68, 68, 240);
+    background: white;
+}
+
+/* Toggle er kaj  */
+.menu-toggle {
+    color: white;
+    float: right;
+    line-height: 80px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    header {
+        padding: 0px 80px;
+    }
+    header nav ul li a{
+        padding: 5px 15px;
+    }
+  
+}
+
+@media only screen and (max-width: 992px) {
+    header {
+        padding: 0 50px;
+    }
+    header nav ul li a{
+        padding: 5px 10px;
+    }
+  
+} 
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 0px 20px;
+    }
+    header nav ul li a{
+        padding: 5px 5px;
+    }
+  
+}  
+  
+@media screen and (max-width: 600px) {
+    .menu-toggle {
+        display: block;
+    }
+    header nav {
+        display: none;
+    }
+}
